@@ -1,0 +1,601 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    height: 800px;
+    background: url("img1.png");
+    background-size: cover;
+}
+#top-nav{
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 116px;
+    background: rgba(0, 0, 0, 0.1);
+    opacity: 0.7;
+    text-align: center;
+}
+#nav-links{
+    color: white;
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.nav-item{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+
+#rezervacija-btn1{
+    width: 190px;
+    height: 63px;
+    color: white;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(5px);
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+#rezervacija-btn1:hover{
+    animation-name: btn-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+#nav-logo{
+    position: relative;
+    font-family: "Josefin Slab", serif;
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 15px;
+}
+#nav-icon{
+    position: absolute;
+    top: -10px;
+    right: 5px;
+}
+#dropdown:hover{
+    cursor: pointer;
+}
+.dropdown-menu{
+    display: none;
+    background-color: rgb(58, 58, 58);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    opacity: .8;
+    position: absolute;
+    padding: 20px 15px 15px 5px;
+    text-align: left;
+}
+.dropdown-menu a, a:link, a:visited{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 5px;
+}
+.show{
+    display: flex !important;
+    flex-direction: column;
+    top: 20px;
+}
+
+#main-div{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 116px);
+}
+#main-h1{
+    color: white;
+    width: fit-content;
+    font-family: 'Abril Fatface', cursive;
+    margin-bottom: 25px;
+}
+.main-btn{
+    position: relative;
+}
+.main-btn:hover{
+    cursor: pointer;
+}
+.btn2{
+    width: 190px;
+    height: 63px;
+    border: 1px solid white;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(5px);
+}
+.main-btn:hover .btn2{
+    animation-name: btn2-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.btn2-text{
+    width: 190px;
+    height: 63px;
+    border: 1px solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.main-btn:hover .btn2-text{
+    animation-name: btn2-text-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+#povjerenje{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#zadnje-objave{
+    text-align: center;
+    padding-left: 5%;
+}
+
+#zadnje-objave h1{
+    font-family: 'Abril Fatface', cursive;
+    margin-bottom: 50px;
+}
+#slike{
+    display: flex;
+}
+
+#slike-lijevo{
+    display: grid;
+    margin-right: 5px;
+}
+#slika-desno img{
+    margin-left: 5px;
+    height: 100%;
+}
+.slike-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.slike-row img{
+    height: 300px;
+}
+#row-1{
+    margin-bottom: 8px;
+}
+.lijeva-slika-row{
+    margin-right: 10px;
+}
+
+#biografija{
+    margin-top: 150px;
+    height: 715px;
+    background-image: url("biografija-background.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+#biografija-inner{
+    width: 506px;
+    height: 466px;
+    margin-left: 100px;
+    background: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+#biografija-inner h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin-top: 92px;
+    margin-bottom: 21px;
+}
+#biografija-inner p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    margin-left: 85px;
+    margin-right: 86px;
+}
+#lokacija{
+    margin-top: 150px;
+    height: 715px;
+    background: url("lokacija-maps.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+#lokacija-inner{
+    height: 487px;
+    width: 508px;
+    background: #FFFFFF99;
+    display: flex;
+    flex-direction: column;
+}
+#lokacija-inner h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 86px 89px 12px 83px;
+}
+
+#lokacija-inner p{
+    margin: 0 83px 21px 83px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+#lokacija-inner span{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.icon{
+    margin-right: 42px;
+}
+
+#footer{
+    background: #1E1B1B;
+    height: 400px;
+    padding: 105px 135px;
+    display: flex;
+    justify-content: space-between;
+}
+#footer h2{
+    font-family: "Abril Fatface", cursive;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin-bottom: 16px;
+}
+#footer p{
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin-bottom: 18px;
+}
+.footer-logo{
+    position: relative;
+    font-family: "Josefin Slab", serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    color: white;
+    padding-top: 50px;
+}
+.footer-icon{
+    position: absolute;
+    top: 25px;
+    right: 5px;
+}
+.drustvene-mreze{
+    color: white;
+}
+.drustvene-mreze img{
+    margin-right: 42px;
+}
+
+@keyframes btn-animation {
+    from {
+        background-color: gray;
+        color: white;
+    }
+    to {
+        background-color: white;
+        color: black;
+    }
+  }
+@keyframes btn2-animation{
+    from{
+        background: rgba(255, 255, 255, 0.01);
+        backdrop-filter: blur(5px);
+    }
+    to{
+        background: white;
+        backdrop-filter: blur(0px);
+
+    }
+}
+@keyframes btn2-text-animation{
+    from{
+        color: white;
+    }
+    to{
+        color: black;
+    }
+}
+
+.header{
+    height: 800px;
+    background-size: cover;
+}
+
+.svadbe-header{
+    background: url("svadbe-background.png");
+}
+.main-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100% - 116px);
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.main-div-inner{
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    color: white; 
+    position: relative; 
+}
+.main-div-inner:hover{
+    cursor: pointer;
+    background-color: white;
+    color: gray;
+}
+.main-show{
+    display: flex !important;
+    flex-direction: column;
+    top: 45px;
+}
+.rodendani-header{
+    background: url("rodendani-background.png");
+}
+.portreti-header{
+    background: url("portreti-background.png");
+}
+.parovi-header{
+    background: url("parovi-background.png");
+}
+.rezervacija-header{
+    background: url("rezervacija-background.png");
+}
+.parovi-slike{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 100px 0 100px;
+}
+.parovi-slike h1{
+    font-family: "Abril Fatface", cursive;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: 0.05em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.parovi-slike-row{
+    display: flex;
+    margin-bottom: 10px;
+}
+.parovi-slike-row img{
+    margin: 10px;
+}
+.parovi-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.parovi-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100% - 116px);
+}
+.vector{
+    position: relative;
+}
+.arrow-down{
+    position: absolute;
+    bottom: 25px;
+    left: 75px;
+}
+.arrow-down:hover{
+    cursor: pointer;
+}
+.parovi-slike-navigation{
+    display: flex;
+    align-items: center;
+    padding-left: 488px;
+    padding-right: 488px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.psn-lijevi, .psn-desni{
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.psn-srednji{
+    width: 302px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin-right: 40px;
+    margin-left: 40px;
+    font-family: 'Josefin Slab', serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    padding: 10px 28px 10px 28px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.navigation-item{
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav-item-current{
+    width: 25px;
+    height: 30px;
+    color: white;
+    background-color: black;
+}
+.rezervacija-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 144px;
+}
+.btn-container{
+    position: relative;
+}
+.spremi-btn{
+    position: absolute;
+    left: -102px;
+}
+.rezervacija-form h1{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: 0.05em;
+    color: white;
+    margin-bottom: 50px;
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.input-item{
+    display: flex;
+    align-items: center;
+    margin-right: 47px;
+}
+.input-box{
+    width: 190px;
+    height: 63px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin-left: 10px;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+
+}
+.popup-container{
+    display: none;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    box-shadow:0 0 0 5000px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-top: 50px;
+    animation-name: popup-animation;
+    animation-duration: 1s;
+}
+.dugmad{
+    display: flex;
+    justify-content:center;
+    margin-top: 20px;
+}
+.dugme{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+.dugme:hover{
+    cursor: pointer;
+}
+.lijevo-dugme{
+    margin-right: 20px;
+}
+#popup-report, #popup-message{
+    display: none;
+}
+
+@keyframes popup-animation{
+    from{
+        opacity: .5;
+    }
+    to{
+        opacity: 1;
+    }
+}
